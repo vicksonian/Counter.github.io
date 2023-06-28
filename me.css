@@ -1,0 +1,258 @@
+
+/* Add this CSS code to a file named styles.css and link it to your HTML file */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #D3B4DEE5;
+  font-family: "Inter", "DM Sans", Arial, sans-serif;
+  min-width: 800px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #413f3f;
+  padding: 10px;
+  color: #fff;
+  text-align: right; /* Align contents to the right */
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right; /* Align list items to the right */
+}
+
+nav ul li {
+  display: inline-block;
+  left: -auto;
+  margin-left: 25px; /* Adjust margin to create spacing between items */
+}
+
+/* Remove margin from the first list item */
+nav ul li:first-child {
+  margin-left: 0; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #ca8585;
+}
+
+/*. About section */
+.About 
+{
+  position: relative;
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 80%;
+  margin: 80px auto;
+  padding: 60px;
+  border: 2px solid rgba(92, 67, 67, 0.5);
+  border-radius: 8px;
+  background: #AA8AB5E5;
+}
+
+.About:hover
+{
+  box-shadow:  0 3px 3px rgba(0, 0, 0, 0.35),
+   0 5px 5px rgba(0, 0, 0, 0.5),  0 15px 25px rgba(0, 0, 0, 0.35);
+
+}
+
+.About h2
+{
+  font-size: 40px;
+  text-align: center;
+}
+
+.About p {
+  color: #030303;
+  margin: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+.About p a {
+  color: #f10909;
+  text-decoration: none;
+}
+
+.About p a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+ /*. Counter section*/
+.Counter
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  bottom: 30px;
+  margin: 40px auto;
+  padding: 50px 30px 50px 30px;
+  border-radius: 8px;
+  border: 2px solid rgba(92, 67, 67, 0.5);
+  box-shadow: 4px solid rgba(255, 255, 255, 0.3);
+  background: #AA8AB5E5;
+}
+
+.Counter:hover
+{
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.35),
+   0 5px 5px rgba(0, 0, 0, 0.5),  0 15px 25px rgba(0, 0, 0, 0.35);
+}
+
+.container
+{
+  position: relative;
+  display: absolute;
+  width: 680px;
+  height: 360px;
+  background: #473E4AE5;
+  border: 4px solid rgba(124, 7, 124, 0.5);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -4px -4px 3px rgba(255, 255, 255, 0.3),
+              5px 5px 5px rgba(0, 0, 0, 0.2),
+              15px 15px 15px rgba(0, 0, 0, 0.2),
+              -4px -4px 3px rgba(255, 255, 255, 0.3),
+              5px 5px 5px rgba(0, 0, 0, 0.2),
+              15px 15px 15px rgba(0, 0, 0, 0.2),
+              -4px -4px 3px rgba(255, 255, 255, 0.3),
+              5px 5px 5px rgba(0, 0, 0, 0.2),
+              15px 15px 15px rgba(231, 124, 124, 0.411),
+              -3px -3px 2px rgba(255, 255, 255, 0.3),
+              5px 5px 5px rgba(0, 0, 0, 0.2),
+              15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .header
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff9f9;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#timer
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timer-section {
+  align-items: center;
+  margin: 3px;
+}
+
+#timer .timer-section p span
+{
+  display: flex;
+  color: #fff;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.timer-section .timer{
+  width: 140px;
+  padding: 2px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  border: 4px solid rgba(191, 231, 233, 0.979);
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background: transparent #ffffffe5;
+  box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.3),
+  -5px -5px 5px rgba(0, 0, 0, 0.2),
+  1px 15px 15px rgba(0, 0, 0, 0.2),
+  -4px -4px 3px rgba(255, 255, 255, 0.3);
+}
+
+.start
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-btn {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 58%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #cfa8a8;
+  color: #2e1a1a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: .5s linear;
+
+}
+
+#start-btn:hover
+{
+  background: #b47474;
+  transition: .5s linear;
+}
+
+
+.footer {
+  position: fixed;
+  background-color: #635e5e;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__left p {
+  margin: 0;
+  align-items: center;
+
+}
+
+.footer__right a {
+  margin-left: 10px;
+
+}
+
+
+.footer__right a img:hover
+{
+  transform: scale(1.3);
+  z-index: 2;
+}
